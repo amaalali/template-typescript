@@ -1,0 +1,24 @@
+# Env file with secrets
+.env
+
+# Editors
+.vscode
+
+# Coverage reports
+coverage
+lib-cov
+
+# Dependencies
+node_modules
+
+# macOS metadata
+.DS_Store
+
+# TypeScript build output dir
+dist/**/*
+
+# Logs
+logs
+
+# Misc
+**/TODO
