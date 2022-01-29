@@ -14,8 +14,9 @@ node_modules
 # macOS metadata
 .DS_Store
 
-# TypeScript build output dir
+# TypeScript build artifacts
 dist/**/*
+build
 
 # Logs
 logs
