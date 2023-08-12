@@ -1,0 +1,15 @@
+{
+  "extends": "./tsconfig",
+  "exclude": [
+    "**/*.test.*",
+    "**/*.spec.*",
+    "**/mocks/*",
+    "**/__mocks__/*",
+    "**/tests/*",
+    "**/__tests__/*"
+  ],
+  "compilerOptions": {
+    "noEmit": false,
+    "allowImportingTsExtensions": false
+  }
+}

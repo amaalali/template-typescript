@@ -1,17 +1,23 @@
 # Template TypeScript
 
-A template repo for TypeScript projects
+## Description
 
-## Project description
+A template repo for TypeScript projects with a few opinions on scripts structure and tooling.
 
-### Tools
+## Project toolingtools:
 
-Uses the following tools:
+- The Typescript compiler `tsc`
+- [Jest](https://jestjs.ioA) for testing that uses `ts-jest`
+- [Prettier](https://prettier.io/)
+- [ESlint](https://eslint.org) for code formatting and linting
 
-- `tsc` and
-- [Jest](https://jestjs.ioA) for testing that uses `Babel`
-- [Prettier](https://prettier.io/) and [ESlint](https://eslint.org) for code formatting and linting
+## Project Conventions
 
-### Conventions
+### Script organisation
+Scripts prefixed with `ci:` (eg `ci:codeQuality`) will run checks or validations
+Scripts with prefix `dev:` (eg `dev:codeQuality` and `dev:test`) will run check, fix issues (where applicable), and/or generate reports.
 
-Assumes that all `npm` scripts with prefix `ci` (eg `ci:codeQuality`) will run checks or validations and all scripts with prefix `dev` (eg `dev:codeQuality` and `dev:test`) will run check, fix issues (where applicable), and/or generate reports.
+### Tooling output
+TLDR: look in `.out/`
+
+Outputs from tooling including the TypeScript compiler (`tsc`) and from test such as coverage reports are all in the `.out/` directory.

@@ -1,8 +1,15 @@
 {
-  "extends": "@tsconfig/node14/tsconfig.json",
   "compilerOptions": {
-    "outDir": "dist"
+    "esModuleInterop": true,
+    "outDir": ".out/dist",
+    "types": [
+      "node",
+      "jest"
+    ],
+    "noEmit": true,
+    "allowImportingTsExtensions": true
   },
-  "include": ["src/**/*"],
-  "exclude": ["node_modules", "**/*.spec.ts", "**/*.test.ts"]
+  "exclude": [
+    "node_modules"
+  ]
 }
