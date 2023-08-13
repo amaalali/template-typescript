@@ -10,6 +10,7 @@
   ],
   "compilerOptions": {
     "noEmit": false,
-    "allowImportingTsExtensions": false
+    "allowImportingTsExtensions": false,
+    "esModuleInterop": true
   }
 }
